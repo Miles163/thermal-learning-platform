@@ -1,4 +1,4 @@
-import { GanttChartSquare, Thermometer, Target, Lightbulb, AlertCircle, BookOpen, ChevronRight, ArrowRight, Clock, BarChart3 } from "lucide-react";
+import { GanttChartSquare, Thermometer, Target, Lightbulb, AlertCircle, BookOpen, ChevronRight, ArrowRight, Clock, BarChart3, Zap } from "lucide-react";
 import Link from "next/link";
 import { ChapterNav } from "@/components/chapter-nav";
 
