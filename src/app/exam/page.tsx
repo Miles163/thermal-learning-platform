@@ -249,7 +249,7 @@ export default function ExamPage() {
       <p className="text-gray-400 text-lg mb-6">10 道综合计算题，覆盖热设计笔试和机考高频题型。点击展开查看完整解析。</p>
 
       <Link
-        href="/exam/huawei"
+        href="/exam/questions"
         className="group flex items-center gap-3 px-5 py-4 mb-8 rounded-xl bg-accent-cyan/5 border border-accent-cyan/20 hover:bg-accent-cyan/10 transition-all"
       >
         <Brain className="w-6 h-6 text-accent-cyan" />
