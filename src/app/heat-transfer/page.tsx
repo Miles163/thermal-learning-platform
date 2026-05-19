@@ -1,4 +1,4 @@
-import { Zap, ChevronRight, BookOpen, Thermometer, Waves, Sun } from "lucide-react";
+import { Zap, ChevronRight, BookOpen, Thermometer, Waves, Sun, Clock, Flame, GitCompare } from "lucide-react";
 import Link from "next/link";
 
 const chapters = [
@@ -31,6 +31,36 @@ const chapters = [
     desc: "学习热辐射的基本规律，包括黑体辐射、斯特藩-玻尔兹曼定律、辐射换热网络分析法。",
     topics: ["黑体辐射", "斯特藩-玻尔兹曼定律", "发射率与灰体", "辐射网络", "太阳辐射"],
     formula: "Q = εσAT⁴",
+  },
+  {
+    slug: "transient-conduction",
+    title: "第四章 瞬态导热",
+    subtitle: "Transient Conduction",
+    icon: Clock,
+    color: "text-accent-cyan",
+    desc: "分析温度随时间变化的非稳态过程——集总参数法、毕渥数Bi、半无限大体和热时间常数。",
+    topics: ["集总参数法", "Bi数", "热时间常数τ", "傅里叶数Fo", "热穿透深度"],
+    formula: "τ = ρVCp/hA",
+  },
+  {
+    slug: "boiling-condensation",
+    title: "第五章 沸腾与凝结",
+    subtitle: "Boiling & Condensation",
+    icon: Flame,
+    color: "text-accent-red",
+    desc: "学习伴随相变的传热过程——池沸腾曲线、临界热流密度CHF、膜状凝结及其工程应用。",
+    topics: ["池沸腾曲线", "核态沸腾", "临界热流密度CHF", "膜状凝结", "热管/VC"],
+    formula: "q″CHF = 0.131·hfgρv[σg(ρl-ρv)]^1/4",
+  },
+  {
+    slug: "heat-exchangers",
+    title: "第六章 换热器设计",
+    subtitle: "Heat Exchangers",
+    icon: GitCompare,
+    color: "text-accent-cyan",
+    desc: "掌握换热器的分类、总传热系数U、LMTD法和ε-NTU法——热管理系统的核心组件。",
+    topics: ["LMTD法", "ε-NTU法", "逆流/顺流", "总传热系数U", "冷板/散热器"],
+    formula: "Q = UA · ΔTlm",
   },
 ];
 
