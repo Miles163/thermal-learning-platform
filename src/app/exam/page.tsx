@@ -1,4 +1,5 @@
-import { GraduationCap, Calculator, Wind, Cpu, Thermometer, Sun, Droplets, Gauge, Box, Zap, CheckCircle, ChevronRight } from "lucide-react";
+import { GraduationCap, Calculator, Wind, Cpu, Thermometer, Sun, Droplets, Gauge, Box, Zap, CheckCircle, ChevronRight, Brain, ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 const problems = [
   {
@@ -245,7 +246,19 @@ export default function ExamPage() {
         机考专区
       </div>
       <h1 className="text-4xl font-bold text-white mb-3">热设计计算题库</h1>
-      <p className="text-gray-400 text-lg mb-8">10 道综合计算题，覆盖热设计笔试和机考高频题型。点击展开查看完整解析。</p>
+      <p className="text-gray-400 text-lg mb-6">10 道综合计算题，覆盖热设计笔试和机考高频题型。点击展开查看完整解析。</p>
+
+      <Link
+        href="/exam/huawei"
+        className="group flex items-center gap-3 px-5 py-4 mb-8 rounded-xl bg-accent-cyan/5 border border-accent-cyan/20 hover:bg-accent-cyan/10 transition-all"
+      >
+        <Brain className="w-6 h-6 text-accent-cyan" />
+        <div className="flex-1">
+          <div className="text-base font-semibold text-white group-hover:text-accent-cyan transition-colors">热设计工程师笔试题库（115题）</div>
+          <div className="text-sm text-gray-500">12 个专题覆盖传热学/CFD/散热器件/前沿技术，含详细解析</div>
+        </div>
+        <ArrowRight className="w-5 h-5 text-gray-600 group-hover:text-accent-cyan transition-colors" />
+      </Link>
 
       <div className="space-y-6 mb-8">
         {problems.map((p, idx) => {
