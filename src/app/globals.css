@@ -29,6 +29,20 @@ body {
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
 }
 
+/* Math formula rendering: use KaTeX fonts for proper math symbols */
+sub, sup {
+  font-size: 0.7em;
+  font-family: inherit;
+}
+
+/* Formula display containers — override mono font with KaTeX for proper Greek/symbols */
+.font-mono.formula,
+.formula .font-mono,
+.text-center .font-mono,
+[class*="font-mono"]:has(> sub, > sup) {
+  font-family: "KaTeX_Main", "KaTeX_Math", "Times New Roman", "Courier New", var(--font-geist-mono), monospace;
+}
+
 .thermal-gradient {
   background: linear-gradient(135deg, #0a0e1a 0%, #0f1525 50%, #1a2340 100%);
 }
